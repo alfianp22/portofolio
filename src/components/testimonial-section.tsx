@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export default function TestimonialsSection() {
   const testimonials = [
     {
@@ -39,15 +41,16 @@ export default function TestimonialsSection() {
             className="p-8 bg-white/10 rounded-2xl shadow-lg backdrop-blur-sm border border-white/20 hover:scale-[1.03] hover:shadow-xl hover:border-yellow-300 transition-transform duration-300"
           >
             <div className="flex justify-center mb-4">
-              <img
+              <Image
                 src={testimonial.image}
                 alt={testimonial.name}
-                className="w-28 h-28 rounded-full border-4 border-red-900 shadow-xl transition duration-300 hover:scale-105 object-center object-cover"
-                style={{ imageRendering: "auto" }}
+                width={112}
+                height={112}
+                className="rounded-full border-4 border-red-900 shadow-xl object-cover"
               />
             </div>
             <p className="text-lg font-medium text-white/90 mb-4 italic">
-              "{testimonial.text}"
+              {testimonial.text}
             </p>
             <p className="font-bold text-green-300">{testimonial.name}</p>
             <p className="text-sm font-bold text-white">{testimonial.role}</p>

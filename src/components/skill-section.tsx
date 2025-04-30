@@ -32,13 +32,6 @@ export default function SkillSection() {
     },
   ];
 
-  const handleScroll = (targetId: string) => {
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <section
       id="skill"
