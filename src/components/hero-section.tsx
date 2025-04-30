@@ -1,5 +1,7 @@
+"use client";
+import Image from "next/image";
+
 export default function HeroSection() {
-  // Handle scroll to target section
   const handleScroll = (targetId: string) => {
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
@@ -58,10 +60,12 @@ export default function HeroSection() {
         {/* Image Section */}
         <div className="flex-1 flex justify-center md:justify-end md:mr-10">
           <div className="relative group">
-            <img
+            <Image
               src="/sayatampan.jpeg"
               alt="calon pemenang baloon door"
-              className="w-72 h-72 object-cover rounded-2xl border-4 border-white shadow-xl transition duration-300 group-hover:scale-105"
+              width={288}
+              height={288}
+              className="object-cover rounded-2xl border-4 border-white shadow-xl transition duration-300 group-hover:scale-105"
             />
             <span className="absolute -inset-1 rounded-2xl border-2 border-cyan-300 animate-pulse opacity-30 group-hover:opacity-60"></span>
           </div>

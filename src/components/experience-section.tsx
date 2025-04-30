@@ -1,3 +1,6 @@
+"use client";
+import Image from "next/image";
+
 export default function ExperienceSection() {
   const experiences = [
     {
@@ -45,9 +48,11 @@ export default function ExperienceSection() {
             className="flex items-center gap-8 bg-white/10 border border-white/20 rounded-2xl p-6 shadow-md hover:scale-[1.02] hover:border-yellow-300 transition-all duration-300"
           >
             <div className="w-28 h-28 flex-shrink-0 rounded-2xl overflow-hidden bg-white/20 flex items-center justify-center p-2">
-              <img
+              <Image
                 src={exp.image}
                 alt={`${exp.role} illustration`}
+                width={100}
+                height={100}
                 className="w-full h-full object-contain"
               />
             </div>

@@ -12,8 +12,8 @@ export default function ContactSection() {
       </h2>
 
       <p className="text-lg mb-8 text-white/90 font-medium">
-        Feel free to reach out if you want to collaborate or just have a chat!
-        I'm always open for exciting projects and new opportunities.
+        Feel free to reach out if you want to collaborate or just have a chat! I
+        am always open for exciting projects and new opportunities.
       </p>
 
       <div className="flex justify-center gap-6 flex-wrap">
